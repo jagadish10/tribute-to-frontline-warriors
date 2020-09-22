@@ -1,0 +1,237 @@
+@import url('https //fonts.googleapis.com/css family=poppins');
+body
+{
+    margin-top:0;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: 0;
+}
+.head
+{
+    margin:0;
+    padding:0;
+    width:100%;
+    font-family: 'Poppins', sans-serif;
+    background: #000;
+}
+section
+{
+    position: relative;
+    width: 100%;
+    background: #000;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+}
+section::before
+{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background:#00adff;
+    z-index:1;
+    mix-blend-mode:color ;
+    animation:animate 10s linear infinite;
+}
+@keyframes animate
+{
+    0%
+    {
+        filter:hue-rotate(0deg);
+    }
+    100%
+    {
+        filter:hue-rotate(360deg);
+    }
+}
+
+.tit
+{
+    max-width: 1000px;
+}
+.title,.titlep
+{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width:100%;
+    text-align: center;
+    color:#fff;
+    text-transform: uppercase;
+    font-size:5em;
+    filter:blur(1px);
+    font-weight:100;
+    text-shadow: 0 0 10px rgba(255,255,255,1),
+    0 0 20px rgba(255,255,255,1),
+    0 0 40px rgba(255,255,255,1),
+    0 0 80px rgba(255,255,255,1),
+    0 0 160px rgba(255,255,255,1);
+} 
+.titlep
+{
+    font-size: 1.60em;
+    filter:blur(.6px);
+    font-weight:100;
+    text-transform: initial;
+    text-shadow: 0 0 1px rgba(255,255,255,1),
+    0 0 2px rgba(255,255,255,1),
+    0 0 4px rgba(255,255,255,1),
+    0 0 8px rgba(255,255,255,1),
+    0 0 16px rgba(255,255,255,1);
+
+}
+.img
+{
+    width:100%;
+    height:400px;
+    transition: transform 0.5s;
+
+}
+.img:hover
+{
+    filter:grayscale(100%);
+    transform:scale(0.9);
+
+}
+.cards
+{
+    display:inline-block;
+    width:28%;
+    border-radius: 20px;
+    margin:30px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.cards:hover
+{
+     transform: scale(1.1);
+     box-shadow: 5px 5px 15px black;
+
+
+}
+.image img
+{
+    max-height: 17vw;
+    min-height: 17vw;
+    max-width:27.3vw;
+    min-width: 27.3vw;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.disc
+{
+    text-align:center;
+    margin:10px;
+    color: crimson;
+}
+.row1
+{
+    background-image: linear-gradient(to right, rgba(192, 231, 48, 0), rgb(192, 231, 48));
+}
+.wrapper {
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000000; 
+}
+.txt {
+    color: #ffffff;
+    background:#000000;
+    font-size:100px;
+    font-weight: bold;
+    font-family: Arial;
+    text-transform: uppercase;
+}
+.txt::before {
+    content: 'Thank You Warriors';
+    position: absolute;
+    mix-blend-mode: difference;
+}
+.txt::before {
+    content: 'Thank You Warriors';
+    position: absolute;
+    mix-blend-mode: difference;
+    filter: blur(3px);
+}
+.neon-wrapper {
+    display:inline-flex;
+    filter: brightness(200%);
+    overflow: hidden;
+}
+.gradient{
+    background: linear-gradient(114.5793141156962deg, rgba(6, 227, 250,1) 4.927083333333334%,rgba(229, 151, 64,1) 97.84374999999999%);
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height:100%;
+    mix-blend-mode: multiply;
+}
+.dodge {
+    background: radial-gradient(circle,white,black 35%) center / 25% 25%;
+    position: absolute;
+    top:-100%;
+    left:-100%;
+    right:0;
+    bottom:0;
+    mix-blend-mode: color-dodge;
+    animation: dodge-area 3s linear infinite;
+}
+@keyframes dodge-area {
+    to {
+        transform: translate(50%,50%);
+    }
+}
+.para1 p
+{
+    color:rgb(175, 10, 241);
+    font-size: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.para2 p
+{
+    color:rgb(235, 19, 170);
+    font-size: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.table
+{
+    width:1100px;
+    margin: auto;
+    table-layout: fixed;
+    text-align: center;
+    margin-top: 50px;
+    font-family:Arial;
+    color:black;
+}
+.table, th, td{
+    border:2px solid rgb(14, 0, 0);
+    border-collapse: collapse;
+    padding: 20px;
+    font-size: 20px; 
+    font-weight: bold;
+}
+.table th{
+    background-color: rgb(61, 10, 145);
+    padding: 30px;
+    text-transform:uppercase;
+}
+.table td:nth-child(3n+1)
+{
+    background-color:rgb(252, 84, 6);
+}
+.table td:nth-child(3n+2)
+{
+    background:rgb(240, 234, 234);
+}
+.table td:nth-child(3n+3)
+{
+    background:rgb(19, 119, 15);
+}
